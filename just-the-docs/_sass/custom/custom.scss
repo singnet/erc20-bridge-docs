@@ -1,0 +1,193 @@
+.breadcrumb-nav{
+    padding: 0.75em;
+    background: #fafafa;
+    .breadcrumb-nav-list{
+        margin-bottom: 0;;
+    }
+}
+
+.help-footer-wrapper{
+    width: 100%;
+    position: relative;
+}
+.site-footer-new{
+    //display: none;
+    position: fixed;
+    z-index: 1001;
+    right: 32px;
+    bottom: 100px;
+    //margin-bottom: 100px;
+    align-items: center;
+    font-weight: 400;
+    background: rgb(64, 134, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    white-space: nowrap;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: rgba(34, 44, 79, 0.1) 0px 3px 12px 1px;
+    transition: box-shadow 0.3s ease 0s, transform 0.2s ease-in 0s, color 0.2s ease 0s;    
+    &:hover{
+        background-color: #005ACB;
+        transition: all .5s linear;
+    }
+}
+
+/* contact us form */
+
+.contact-us-container {
+    width: 100%;;
+    padding: 48px 0;
+    background: #fafafa;
+}
+
+.contact-us-container h2 {
+    margin: 0;
+}
+
+.contact-us-container form {
+    width: 100%;
+    padding: 0 32px;
+    margin: 32px auto 0;
+    text-align: center;
+}
+
+.contact-us-container form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us-container form input {
+    width: 302px;
+    padding: 17px 12px;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+    border-radius: 4px;
+}
+
+.select-container {
+    position: relative
+}
+
+.select-container:after {
+    content: "\f0d7";
+    padding-left: 5px;
+    position: absolute;
+    top: 50%;
+    right: 21px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+}
+
+.contact-us-container form select {
+    width: 100%;
+    padding: 17px 12px;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+    border-radius: 4px;
+    margin: 16px 0;
+    display: block;
+    color: #212121;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-us-container form select::-ms-expand {
+    // removing default arrow in ie
+    display: none;
+}
+
+.contact-us-container form select:focus,
+.contact-us-container form input:focus,
+.contact-us-container form textarea:focus {
+    outline: none;
+    border-color: #212121;
+}
+
+.contact-us-container form textarea {
+    width: 100%;
+    padding: 18px 12px;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+    border-radius: 4px;
+    display: block;
+    resize: none;
+}
+
+.contact-us-container form button {
+    width: 153px;
+    padding: 16px 46px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    display: flex;
+    background: #4086FF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-us-container form span {
+    width: 100%;
+    margin-top: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.error-msg { color: #f00 } 
+
+.contact-us-container form .success-msg { 
+    display: none;
+    color: #00C48C;
+    text-align: center
+}
+
+.contact-us-container form .success-msg.show { display: block }
+
+.contact-us-container form button:hover {
+    background-color: #005ACB;
+    transition: all .5s linear;
+}
+
+html body .nav-list-item a{
+    color:#4086ff!important;
+    &.active{
+        color: #005ACB!important;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-us-container form div,
+    .contact-us-container form div input  {
+       width: 100%;
+       display: block;
+       &:first-child{
+           margin-bottom: 16px;
+       }
+    }
+ }
+ .external-menu-wrapper{
+     margin-top: 0.75rem;
+ }
+
+.fa-chat{
+    content: "\f0d7";
+    padding-left: 5px;
+    font-family: "FontAwesome";
+}
